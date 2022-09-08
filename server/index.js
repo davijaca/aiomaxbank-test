@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const path = require('path')
 require("dotenv").config();
-const UserModel = require("./model/model");
 
 app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
 app.use("/public", express.static(path.join(__dirname + "/public")))
@@ -18,7 +17,7 @@ mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.n
 
 
 app.get("/showall", (req, res) => {
-	UserModel.find({}, (err, result) => {
+	User.find({}, (err, result) => {
 	  if (err) {
 		res.json(err);
 	  } else {
