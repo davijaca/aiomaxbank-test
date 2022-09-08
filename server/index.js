@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const path = require('path')
 
-app.use(cors())
+app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
 app.use("/public", express.static(path.join(__dirname + "/public")))
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
@@ -222,6 +222,17 @@ app.post('/api/password', async (req, res) => {
 		res.json({ status: 'error', error: 'ULTRA MEGA ERROR' })
 	}
 })
+
+
+
+
+
+
+.get('/hello', (req, res) => {
+	res.status(200).json({greeting: 'hello from node'})
+})
+
+
 
 
 app.listen(process.env.PORT || 3000, function(){
