@@ -225,11 +225,11 @@ app.post('/api/password', async (req, res) => {
 
 .get('/mongo', async (req, res) => {
 
-	try {const decoded = jwt.verify(token, 'secret123')
-	     const email = decoded.email
-		 await User.findOne(
-			{ type: email}
-			)
+	try {User.find(req.params.email).
+        then((email) => {
+            console.log(email);
+            res.send(email);
+    })
 		res.json({ status: 'ok' })
 	} catch (err) {
 		res.json({ status: 'error', error: 'ULTRA MEGA ERROR' })
