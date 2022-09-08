@@ -5,10 +5,10 @@ const mongoose = require('mongoose')
 const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-const path = require('path')
+
 
 app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
-app.use("/public", express.static(path.join(__dirname + "/public")))
+app.use(express.json())
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
 
@@ -230,6 +230,12 @@ app.post('/api/password', async (req, res) => {
 
 .get('/hello', (req, res) => {
 	res.status(200).json({greeting: 'hello from node'})
+})
+
+.get('/greeting', async(req, res) => {
+	try {
+		const client = await
+	}
 })
 
 
