@@ -6,11 +6,36 @@ const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const path = require('path')
+require("dotevn").config();
+const UserModel = require("./model/model");
 
 app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
 app.use("/public", express.static(path.join(__dirname + "/public")))
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
+
+
+
+
+app.get("/showall", (req, res) => {
+	UserModel.find({}, (err, result) => {
+	  if (err) {
+		res.json(err);
+	  } else {
+		res.json(result);
+	  }
+	});
+  });
+
+
+
+
+
+
+
+
+
+
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
@@ -223,18 +248,6 @@ app.post('/api/password', async (req, res) => {
 	}
 })
 
-.get('/mongo', async (req, res) => {
-
-	try {User.find(req.params.email).
-        then((email) => {
-            console.log(email);
-            res.send(email);
-    })
-		res.json({ status: 'ok' })
-	} catch (err) {
-		res.json({ status: 'error', error: 'ULTRA MEGA ERROR' })
-	}
-})
 
 
 
