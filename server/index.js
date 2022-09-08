@@ -232,11 +232,6 @@ app.post('/api/password', async (req, res) => {
 	res.status(200).json({greeting: 'hello from node'})
 })
 
-.get('/greeting', async(req, res) => {
-	try {
-		const client = await
-	}
-})
 
 
 
