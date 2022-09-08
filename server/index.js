@@ -6,7 +6,7 @@ const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const path = require('path')
-require("dotevn").config();
+require("dotenv").config();
 const UserModel = require("./model/model");
 
 app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
