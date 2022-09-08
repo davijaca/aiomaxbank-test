@@ -12,7 +12,7 @@ const Dashboard = () => {
 
 
     async function populateName() {
-        const req = await fetch('http://localhost:1337/api/name', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/name', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -42,7 +42,7 @@ const Dashboard = () => {
 
 
     async function populateBalance() {
-        const req = await fetch('http://localhost:1337/api/balance', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -71,7 +71,7 @@ const Dashboard = () => {
 
     async function Deposit() {
 
-        const req = await fetch('http://localhost:1337/api/balance', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const Dashboard = () => {
 
     async function Withdraw() {
 
-        const req = await fetch('http://localhost:1337/api/balance', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const Settings = () => {
 
 
     async function populateName() {
-        const req = await fetch('http://localhost:1337/api/name', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/name', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -52,7 +52,7 @@ const Settings = () => {
 
     async function updateName() {
 
-        const req = await fetch('http://localhost:1337/api/name', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/name', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const Settings = () => {
     //  SURNAME SECTION
 
     async function populateSurname() {
-        const req = await fetch('http://localhost:1337/api/surname', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/surname', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -109,7 +109,7 @@ const Settings = () => {
 
     async function updateSurname() {
 
-        const req = await fetch('http://localhost:1337/api/surname', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/surname', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -134,7 +134,7 @@ const Settings = () => {
         //  EMAIL SECTION
 
         async function populateEmail() {
-            const req = await fetch('http://localhost:1337/api/email', {
+            const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/email', {
                 headers: {
                     'x-access-token': localStorage.getItem('token'),
                 },
@@ -164,7 +164,7 @@ const Settings = () => {
     
         async function updateEmail() {
     
-            const req = await fetch('http://localhost:1337/api/email', {
+            const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -191,7 +191,7 @@ const Settings = () => {
 
 
   async function populatePassword() {
-    const req = await fetch('http://localhost:1337/api/password', {
+    const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/password', {
         headers: {
             'x-access-token': localStorage.getItem('token'),
         },
@@ -222,7 +222,7 @@ const Settings = () => {
     async function updatePassword() {
         
 
-        const req = await fetch('http://localhost:1337/api/password', {
+        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
