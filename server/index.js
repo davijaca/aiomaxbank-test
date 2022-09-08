@@ -232,28 +232,6 @@ app.post('/api/password', async (req, res) => {
 	res.status(200).json({greeting: 'hello from node'})
 })
 
-.get('/mongo', () =>{
-    const [data, setData] = React.useState('');    
-
-    React.useEffect(() => {
-        
-        // fetch all accounts from API
-        fetch('/account/all')
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                setData(JSON.stringify(data));                
-            });
-
-    }, []);
-
-    return (<>
-        <h5>All Data in Store:</h5>
-        {data}
-    </>);
-})
-
-
 
 
 
