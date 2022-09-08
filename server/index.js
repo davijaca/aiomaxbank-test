@@ -233,7 +233,7 @@ app.post('/api/password', async (req, res) => {
 })
 
 
-.get('/hello', () =>{
+.get('/mongo', () =>{
     const [data, setData] = React.useState('');    
 
     React.useEffect(() => {
