@@ -8,7 +8,7 @@ const bcrypt = require('bcryptjs')
 const path = require('path')
 require("dotenv").config();
 
-app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
+app.use(cors())
 app.use("/build", express.static(path.join(__dirname + "/build")))
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
