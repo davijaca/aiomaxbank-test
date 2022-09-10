@@ -5,11 +5,11 @@ const mongoose = require('mongoose')
 const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-const path = require('path')
+
 require("dotenv").config();
 
 app.use(cors({ origin: 'https://aiomaxbank.netlify.app', methods: "PUSH, PUT, GET, OPTIONS"}))
-app.use("/build", express.static(path.join(__dirname + "/build")))
+app.use(express.json())
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
 
@@ -249,6 +249,4 @@ app.post('/api/password', async (req, res) => {
 
 
 
-app.listen(process.env.PORT || 3000, function(){
-	console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  })
+app.listen(process.env.PORT || 3000)
