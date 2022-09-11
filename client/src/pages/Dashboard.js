@@ -10,9 +10,23 @@ const Dashboard = () => {
     const [newDeposit, setNewDeposit] = useState('')
     const [newWithdraw, setNewWithdraw] = useState('')
 
+    function moneyFormatter(num) {
+        let p = Number(num).toFixed(2).split('.');
+        return (
+          '$ ' + (p[0].split('')[0]=== '-' ? '-' : '') +
+          p[0]
+            .split('')
+            .reverse()
+            .reduce(function (acc, num, i, orig) {
+              return num === '-' ? acc : num + (i && !(i % 3) ? ',' : '') + acc;
+            }, '') +
+          '.' +
+          p[1]
+        );
+      }
 
     async function populateName() {
-        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/name', {
+        const req = await fetch('http://localhost:1337/api/name', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -42,7 +56,7 @@ const Dashboard = () => {
 
 
     async function populateBalance() {
-        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
+        const req = await fetch('http://localhost:1337/api/balance', {
             headers: {
                 'x-access-token': localStorage.getItem('token'),
             },
@@ -69,15 +83,19 @@ const Dashboard = () => {
         }
     })
 
-    async function Deposit() {
+    async function Deposit(e) {
 
-        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
+        e.preventDefault();
+
+        const req = await fetch('http://localhost:1337/api/balance', {
+            
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'x-access-token': localStorage.getItem('token'),
             },
             body: JSON.stringify({
+                id: Math.floor(Math.random() * 100000000),
                 balance: +balance + +newDeposit,
             }),
         })
@@ -92,15 +110,18 @@ const Dashboard = () => {
 
     }
 
-    async function Withdraw() {
+    async function Withdraw(e) {
 
-        const req = await fetch('https://aiomaxbank-test.herokuapp.com/api/balance', {
+        e.preventDefault();
+
+        const req = await fetch('http://localhost:1337/api/balance', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'x-access-token': localStorage.getItem('token'),
             },
             body: JSON.stringify({
+                id: Math.floor(Math.random() * 100000000),
                 balance: +balance - +newWithdraw,
             }),
         })
@@ -164,7 +185,7 @@ const Dashboard = () => {
               </div>
         <div class="dashboard_container">
 
-        <div class="balance"><h1>Your balance: ${balance || '0'}</h1></div>    
+        <div class="balance"><h1>Your balance: {moneyFormatter(balance) || '0'}</h1></div>    
         <div class="deposit">
             <div class="test1 overlay" id="home-section">
                 <div class="container">
