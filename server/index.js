@@ -319,6 +319,11 @@ app.post('/api/password', async (req, res) => {
 
 
 
-app.listen(1337, () => {
-	console.log('Server started on 1337')
+.get('/hello', (req, res) => {
+	res.status(200).json({greeting: 'hello from node'})
 })
+
+
+
+
+app.listen(process.env.PORT || 3000)
