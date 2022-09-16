@@ -6,6 +6,7 @@ import Register from "./pages/Register"
 import Deposit from "./pages/Dashboard"
 import Transfer from "./pages/Transfer"
 import Settings from "./pages/Settings"
+import Showall from "./pages/Showall"
 import './App.css';
 
 const App = () => {
