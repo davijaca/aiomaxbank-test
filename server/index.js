@@ -6,17 +6,61 @@ const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 
-require("dotenv").config();
-
-app.use(cors({ origin: 'https://aiomaxbank.netlify.app'}))
+app.use(cors())
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://davibentim:aiomaxbank@cluster0.xpfnvyo.mongodb.net/UserInfo?retryWrites=true&w=majority')
 
 
+// update balance of all users
+
+app.put('/api/showall', async (req, res) => {
+	const { balance } = req.body
+	const users = await User.find()
+	users.forEach(async (user) => {
+		await User.updateOne({ _id: user._id }, { $set: { balance: balance } })
+	})
+	res.json({ status: 'ok' })
+})
+
+// update balance of a specific user by email
+
+app.post('/api/showall/:email', async (req, res) => {
+	const { balance } = req.body
+	const { email } = req.params
+	await User.updateOne({ email: email }, { $set: { balance: balance } })
+	res.json({ status: 'ok' })
+})
+
+// find a user name by email
+
+app.get('/api/showall/:email', async (req, res) => {
+	const { email } = req.params
+	const user = await User.findOne({ email: email })
+	res.json({ name: user.name })
+})
 
 
-app.get("/showall", (req, res) => {
+// create a transfer of balance between two users
+
+app.post('/api/transfer', async (req, res) => {
+	const { from, to, amount } = req.body
+	const fromUser = await User.findOne({ email: from })
+	const toUser = await User.findOne({ email: to })
+	if (fromUser.balance < amount) {
+		res.json({ status: 'error', error: 'Insufficient funds' })
+	} else {
+		await User.updateOne({ email: from }, { $set: { balance: +fromUser.balance - +amount } })
+		await User.updateOne({ email: to }, { $set: { balance: +toUser.balance + +amount } })
+		res.json({ status: 'ok',  message: "Transfer successful" })
+	}
+})
+
+
+// show all users
+
+
+app.get("/api/showall", (req, res) => {
 	User.find({}, (err, result) => {
 	  if (err) {
 		res.json(err);
@@ -26,24 +70,31 @@ app.get("/showall", (req, res) => {
 	});
   });
 
-
+// create a new user
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
 	try {
 		const newPassword = await bcrypt.hash(req.body.password, 10)
+		const min = 10000000;
+		const max = 99999999;
+		const id = Math.floor(Math.random() * (max - min + 1)) + min;
 		await User.create({
+			id: id,
 			name: req.body.name,
 			surname: req.body.surname,
 			email: req.body.email,
 			password: newPassword,
 			balance: 0,
 		})
-		res.json({ status: 'ok' })
+		res.json({ status: 'ok',  message: 'User registered' })
 	} catch (err) {
-		res.json({ status: 'error', error: 'Duplicate email' })
+		res.json({ status: 'error', error: 'Email already in use' })
 	}
 })
+
+
+// login
 
 app.post('/api/login', async (req, res) => {
 	const user = await User.findOne({
@@ -74,6 +125,8 @@ app.post('/api/login', async (req, res) => {
 	}
 })
 
+// show balance
+
 app.get('/api/balance', async (req, res) => {
 	const token = req.headers['x-access-token']
 
@@ -88,6 +141,10 @@ app.get('/api/balance', async (req, res) => {
 		res.json({ status: 'error', error: 'invalid token' })
 	}
 })
+
+
+// update balance
+
 
 app.post('/api/balance', async (req, res) => {
 	const token = req.headers['x-access-token']
@@ -107,6 +164,9 @@ app.post('/api/balance', async (req, res) => {
 	}
 })
 
+
+// show user info
+
 app.get('/api/name', async (req, res) => {
 	const token = req.headers['x-access-token']
 
@@ -121,6 +181,8 @@ app.get('/api/name', async (req, res) => {
 		res.json({ status: 'error', error: 'invalid token' })
 	}
 })
+
+// update user info
 
 app.post('/api/name', async (req, res) => {
 	const token = req.headers['x-access-token']
@@ -140,6 +202,10 @@ app.post('/api/name', async (req, res) => {
 	}
 })
 
+
+// show user surname
+
+
 app.get('/api/surname', async (req, res) => {
 	const token = req.headers['x-access-token']
 
@@ -154,6 +220,9 @@ app.get('/api/surname', async (req, res) => {
 		res.json({ status: 'error', error: 'invalid token' })
 	}
 })
+
+
+// update user surname
 
 app.post('/api/surname', async (req, res) => {
 	const token = req.headers['x-access-token']
@@ -173,6 +242,10 @@ app.post('/api/surname', async (req, res) => {
 	}
 })
 
+
+// show user email
+
+
 app.get('/api/email', async (req, res) => {
 	const token = req.headers['x-access-token']
 
@@ -187,6 +260,10 @@ app.get('/api/email', async (req, res) => {
 		res.json({ status: 'ok' })
 	}
 })
+
+
+// update user email
+
 
 app.post('/api/email', async (req, res) => {
 	const token = req.headers['x-access-token']
@@ -206,6 +283,7 @@ app.post('/api/email', async (req, res) => {
 		res.json({ status: 'ok' })
 	}
 })
+
 
 
 app.get('/api/password', async (req, res) => {
@@ -241,12 +319,6 @@ app.post('/api/password', async (req, res) => {
 
 
 
-
-.get('/hello', (req, res) => {
-	res.status(200).json({greeting: 'hello from node'})
+app.listen(1337, () => {
+	console.log('Server started on 1337')
 })
-
-
-
-
-app.listen(process.env.PORT || 3000)

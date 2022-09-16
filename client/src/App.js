@@ -20,6 +20,7 @@ const App = () => {
                 <Route path="/dashboard" element={<Deposit/>}/>
                 <Route path="/transfer" element={<Transfer/>}/>
                 <Route path="/settings" element={<Settings/>}/>
+                <Route path="/showall" element={<Showall/>}/>
 
                 </Routes>
             </BrowserRouter>
