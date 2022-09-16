@@ -287,8 +287,8 @@ const Settings = () => {
         
         <div class="site-blocks-cover overlay"style={{ backgroundImage: `url(${background})` }} data-aos="fade" id="home-section">
 
-            <div class="settings_container ">
-            <div class="update-name ">
+            <div class="settings_container">
+            <div class="update">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-12 mt-lg-5 text-center">
@@ -312,26 +312,6 @@ const Settings = () => {
                                     />
                                     <input class="confirm-button" type="submit" value="Update" />
                             </form>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-
-            <div class="update-email">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-12 mt-lg-5 text-center">
-                        <h2 class="form__title">Email: {email}</h2>
-                                <form onSubmit={updateEmail}>
-                                    <input
-                                        type='text'
-                                        placeholder='Under Development'
-                                        value={newEmail}
-                                        
-                                    />
-                                    <input class="confirm-button" type="submit" value="Update" />
-                            </form>
                             <h2 class="form__title">Password:</h2>
                                 <form onSubmit={updatePassword}>
                                     <input
@@ -345,9 +325,9 @@ const Settings = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
             
+            </div>
+    
         </div>
         </div>
         </div>

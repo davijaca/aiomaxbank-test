@@ -10,6 +10,7 @@ function App() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [balance] = useState('')
+  const [id] = useState('')
 
   async function registerUser(event) {
     event.preventDefault()
@@ -20,6 +21,7 @@ function App() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        id,
         name,
         surname,
         email,

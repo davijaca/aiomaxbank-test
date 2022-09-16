@@ -95,7 +95,6 @@ const Dashboard = () => {
                 'x-access-token': localStorage.getItem('token'),
             },
             body: JSON.stringify({
-                id: Math.floor(Math.random() * 100000000),
                 balance: +balance + +newDeposit,
             }),
         })
@@ -121,7 +120,6 @@ const Dashboard = () => {
                 'x-access-token': localStorage.getItem('token'),
             },
             body: JSON.stringify({
-                id: Math.floor(Math.random() * 100000000),
                 balance: +balance - +newWithdraw,
             }),
         })
@@ -161,7 +159,7 @@ const Dashboard = () => {
                     <li class="has-children">
                       <a href="#about-section" class="nav-link">{name}</a>
                       <ul class="dropdown">
-                        <li><a href="/transfer" class="transfer">Transfer</a></li>
+                        <li><a href="/transfer" class="nav-link">Transfer</a></li>
                         <li><a href="/settings" class="nav-link">Settings</a></li>
                         <li><a onClick={logOut} class="nav-link">Log Out</a></li>
                       </ul>
@@ -176,13 +174,6 @@ const Dashboard = () => {
         </header>
         
         <div class="site-blocks-cover overlay"style={{ backgroundImage: `url(${background})` }} data-aos="fade" id="home-section">
-                <div class="container">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-md-10 mt-lg-5 text-center">
-                     
-                  </div>
-                </div>
-              </div>
         <div class="dashboard_container">
 
         <div class="balance"><h1>Your balance: {moneyFormatter(balance) || '0'}</h1></div>    
@@ -194,7 +185,7 @@ const Dashboard = () => {
                         <h1 class="form__title">Deposit</h1>
                                 <form onSubmit={Deposit}>
                                     <input
-                                        type='number'
+                                        type='numeric'
                                         placeholder='Amount'
                                         value={newDeposit}
                                         onChange={(e) => setNewDeposit(e.target.value)}
@@ -213,16 +204,15 @@ const Dashboard = () => {
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-12 mt-lg-5 text-center">
                         <h1 class="form__title">Withdraw</h1>
-                                <form onSubmit={Withdraw}>
-                                    <input
-                                        type='number'
-                                        placeholder='Amount'
-                                        value={newWithdraw}
-                                        onChange={(e) => setNewWithdraw(e.target.value)}
-                                    />
-                                    <input class="confirm-button" type="submit" value="Confirm" />
-                            </form>
-
+                            <form onSubmit={Withdraw}>
+                                <input
+                                    type='numeric'    
+                                    placeholder='Amount'    
+                                    value={newWithdraw}    
+                                    onChange={(e) => setNewWithdraw(e.target.value)}
+                                />    
+                                <input class="confirm-button" type="submit" value="Confirm" />        
+                            </form>       
                         </div>
                     </div>
                 </div>
