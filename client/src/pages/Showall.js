@@ -9,6 +9,24 @@ const Showall = () => {
   const [name, displayName] = useState('')
 
 
+  // money formatter function
+
+  function moneyFormatter(num) {
+    let p = Number(num).toFixed(2).split('.');
+    return (
+      '$ ' + (p[0].split('')[0]=== '-' ? '-' : '') +
+      p[0]
+        .split('')
+        .reverse()
+        .reduce(function (acc, num, i, orig) {
+          return num === '-' ? acc : num + (i && !(i % 3) ? ',' : '') + acc;
+        }, '') +
+      '.' +
+      p[1]
+    );
+  }
+
+
 
   // NAME SECTION
 
@@ -61,11 +79,15 @@ const Showall = () => {
           })
   }, [])
 
-  // delete a specific user by clicking the delete button
 
-    const deleteUser = (id) => {
-        fetch('https://aiomaxbank-test.herokuapp.com/api/showall' + id, {
+  // delete row's user from the database by clicking the delete button
+
+    const deleteUser = (email) => {
+        fetch('https://aiomaxbank-test.herokuapp.com/api/delete/' + email, {
             method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
         })
             .then(res => res.json())
             .then(data => {
@@ -76,7 +98,11 @@ const Showall = () => {
                     alert(data.error)
                 }
             })
+
     }
+
+
+
 
 
 
@@ -84,7 +110,8 @@ const Showall = () => {
 
     return (
 
-        <div style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', height: '100vh' }}>
+        <div class="site-blocks-cover overlay"style={{ backgroundImage: `url(${background})` }} data-aos="fade" id="home-section">
+        <div class="dashboard_container">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
@@ -96,23 +123,21 @@ const Showall = () => {
                                 <table className="table table-bordered">
                                     <thead>
                                         <tr>
+                                            <th>Id</th>
                                             <th>Name</th>
                                             <th>Surname</th>
                                             <th>Email</th>
                                             <th>Balance</th>
-                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {users.map((user, index) => (
                                             <tr key={index}>
+                                                <td>{user.id}</td>
                                                 <td>{user.name}</td>
                                                 <td>{user.surname}</td>
                                                 <td>{user.email}</td>
-                                                <td>{user.balance}</td>
-                                                <td>
-                                                    <button className="btn btn-danger" onClick={() => deleteUser(user.email)}>Delete</button>
-                                                </td>
+                                                <td>{moneyFormatter(user.balance)}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -122,6 +147,7 @@ const Showall = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

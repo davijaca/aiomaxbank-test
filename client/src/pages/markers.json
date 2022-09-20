@@ -1,0 +1,1558 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+"properties": {
+  "title": "New York",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -74.0059413,40.7127837],
+ 
+ "type": "Point"
+}
+
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Los Angeles",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -118.2436849,34.0522342],
+ 
+ "type": "Point"
+}
+
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Chicago",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -87.6297982,41.8781136],
+ 
+ "type": "Point"
+}
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Houston",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -95.3698028,29.7604267],
+ 
+ "type": "Point"
+}
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Philadelphia",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -75.1652215,39.9525839],
+ 
+ "type": "Point"
+}
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Phoenix",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -112.0740373,33.4483771],
+ 
+ "type": "Point"
+}
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "San Antonio",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -98.4936282,29.4241219],
+ 
+ "type": "Point"
+}
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "San Diego",
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -117.1610838,32.715738],
+ 
+ "type": "Point"
+}
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Dallas",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -96.7969879,32.7766642],
+ 
+ "type": "Point"
+}
+
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "San Jose",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -121.8863286,37.3382082],
+ 
+ "type": "Point"
+}
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Austin",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -97.7430608,30.267153],
+ 
+ "type": "Point"
+}
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Indianapolis",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -86.158068,39.768403],
+ 
+ "type": "Point"
+}
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Jacksonville",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -81.655651,30.3321838],
+ 
+ "type": "Point"
+}
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "San Francisco",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -122.4194155,37.7749295],
+ "type": "Point"
+}
+
+
+},
+{
+      "type": "Feature",
+"properties": {
+  "title": "Columbus",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -82.9987942, 39.9611755 ],
+ "type": "Point"
+}
+
+},
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Charlotte",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -80.8431267, 35.2270869],
+        "type": "Point"
+       
+      
+      
+    }
+  },
+    
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Fort Worth",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -97.3307658,32.7554883],
+       
+       "type": "Point"
+      
+      }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Detroit",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -83.0457538,42.331427],
+       
+       "type": "Point"
+      }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "El Paso",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -106.4424559,31.7775757],
+       
+       "type": "Point"
+      
+      }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Memphis",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -90.0489801,35.1495343],
+       
+       "type": "Point"
+      
+      }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Seattle",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -122.3320708,47.6062095],
+       
+       "type": "Point"
+      }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Denver",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -104.990251,39.7392358],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Washington",
+    
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -77.0368707,38.9071923],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Boston",
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -71.0588801,42.3600825],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Nashville-Davidson",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -86.7816016,36.1626638],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Baltimore",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -76.6121893,39.2903848],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Oklahoma City",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -97.5164276,35.4675602],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Louisville/Jefferson County",
+      
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -85.7584557,38.2526647],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Portland",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -122.6764816,45.5230622],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Las Vegas",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -115.1398296,36.1699412],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Milwaukee",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -87.9064736,43.0389025],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Albuquerque",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -106.6055534,35.0853336],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Tucson",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -110.926479,32.2217429],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Fresno",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -119.7725868,36.7468422],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Sacramento",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -121.4943996,38.5815719],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Long Beach",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -118.1937395,33.7700504],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Kansas City",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -94.5785667,39.0997265],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Mesa",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -111.8314724,33.4151843],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Virginia Beach",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -75.977985,36.8529263],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Atlanta",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -84.3879824,33.7489954],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Colorado Springs",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -104.8213634,38.8338816],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Omaha",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -95.9979883,41.2523634],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Raleigh",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -78.6381787,35.7795897],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Miami",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -80.1917902,25.7616798],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Oakland",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -122.2711137,37.8043637],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Minneapolis",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -93.2650108,44.977753],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Tulsa",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -95.992775,36.1539816],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Cleveland",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -81.6943605,41.49932],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Wichita",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -97.336111,37.688889],
+       
+       "type": "Point"
+      }
+      
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Arlington",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -97.1080656,32.735687],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "New Orleans",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -90.0715323,29.9510658],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Bakersfield",
+  
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -119.0187125,35.3732921],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Tampa",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -82.4571776,27.950575],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Honolulu",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [-157.8583333, 21.3069444],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Aurora",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -104.8319195,39.7294319],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Anaheim",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -117.9145036,33.8352932],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Santa Ana",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -117.8678338,33.7455731],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "St. Louis",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -90.1994042,38.6270025],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Riverside",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [  -117.3961564,33.9533487],
+      
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Corpus Christi",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -97.396381,27.8005828],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Lexington-Fayette",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -84.5037164,38.0405837],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Pittsburgh",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -79.9958864,40.4406248],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Anchorage",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [-149.9002778, 61.2180556],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Stockton",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -121.2907796,37.9577016],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Cincinnati",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -84.5120196,39.1031182],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "St. Paul",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -93.0899578,44.9537029],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Toledo",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -83.555212,41.6639383],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Greensboro",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [-79.7919754, 36.0726354],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Newark",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -74.1723667,40.735657],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Plano",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -96.6988856,33.0198431],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Henderson",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -114.9817213,36.0395247],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Lincoln",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -96.6851982,40.8257625],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Buffalo",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -78.8783689,42.8864468],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Jersey City",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -74.0776417,40.7281575],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Chula Vista",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -117.0841955,32.6400541],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Fort Wayne",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -85.1393513,41.079273],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Orlando",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -81.3792365,28.5383355],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "St. Petersburg",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -82.64,27.773056],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Chandler",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -111.8412502,33.3061605],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Laredo",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -99.4803241,27.5305671],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Norfolk",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -76.2858726,36.8507689],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Durham",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -78.898619,35.9940329],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Madison",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -89.4012302,43.0730517],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Lubbock",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [  -101.8551665,33.5778631],
+      
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Irvine",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -117.7946942,33.6839473],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Winston-Salem",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -80.244216,36.0998596],
+      
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Glendale",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [-112.1859866, 33.5386523],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Garland",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -96.6388833,32.912624],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Hialeah",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -80.2781057,25.8575963],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Reno",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -119.8138027,39.5296329],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Chesapeake",
+ 
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -76.2874927,36.7682088],
+       
+       "type": "Point"
+       }
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Gilbert",
+   
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -111.789027,33.3528264],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Baton Rouge",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -91.1403196,30.4582829],
+      
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Irving",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -96.9488945,32.8140177],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Scottsdale",
+      
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -111.9260519,33.4941704],
+       
+       "type": "Point"
+       }
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "North Las Vegas",
+
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -115.1175013,36.1988592],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Fremont",
+      
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -121.9885719,37.5482697],
+       
+       "type": "Point"
+       }
+
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Boise City",
+  
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -116.2146068,43.6187102],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "Richmond",
+   
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -77.4360481,37.5407246],
+       
+       "type": "Point"
+       }
+      
+      
+    },
+    {
+            "type": "Feature",
+      "properties": {
+        "title": "San Bernardino",
+    
+      "description": "A northside park that is home to the Lincoln Park Zoo"
+      },
+      "geometry": {
+        "coordinates": [ -117.2897652,34.1083449],
+     
+       "type": "Point"
+       }
+
+      
+    },
+
+    {
+      "type": "Feature",
+"properties": {
+  "title": "Salt Lake City",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+  "coordinates": [ -111.9311,40.7776],
+
+ "type": "Point"
+ }
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Rexburg",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -111.7919,43.8226],
+
+"type": "Point"
+}
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Missoula",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -114.0214,46.8751],
+
+"type": "Point"
+}
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Fargo",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -96.8292,46.8651],
+
+"type": "Point"
+}
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Billings",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -93.5551,37.0641],
+
+"type": "Point"
+}
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Gillette",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -105.4982,44.2752],
+
+"type": "Point"
+}
+
+
+},
+
+{
+  "type": "Feature",
+"properties": {
+"title": "Cheyenne",
+
+"description": "A northside park that is home to the Lincoln Park Zoo"
+},
+"geometry": {
+"coordinates": [ -104.7902,41.135],
+
+"type": "Point"
+}
+
+
+}
+
+    
+  ],
+  "type": "FeatureCollection"
+
+  
+}

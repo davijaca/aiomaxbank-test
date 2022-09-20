@@ -285,6 +285,7 @@ app.post('/api/email', async (req, res) => {
 })
 
 
+// show user password
 
 app.get('/api/password', async (req, res) => {
 	const token = req.headers['x-access-token']
@@ -301,6 +302,9 @@ app.get('/api/password', async (req, res) => {
 	}
 })
 
+
+// update user password
+
 app.post('/api/password', async (req, res) => {
 	const token = req.headers['x-access-token']
 
@@ -316,14 +320,6 @@ app.post('/api/password', async (req, res) => {
 		res.json({ status: 'error', error: 'ULTRA MEGA ERROR' })
 	}
 })
-
-
-
-.get('/hello', (req, res) => {
-	res.status(200).json({greeting: 'hello from node'})
-})
-
-
 
 
 app.listen(process.env.PORT || 3000)
