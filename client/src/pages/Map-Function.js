@@ -25,7 +25,8 @@ const Map = () => {
     // Add navigation control (the +/- zoom buttons)
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
 
-
+    // Clean up on unmount
+    return () => map.remove();
   }, []);
 
   return <div className="map-container" ref={mapContainerRef} />;
